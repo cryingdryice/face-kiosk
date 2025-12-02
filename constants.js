@@ -1,2 +1,5 @@
 const API_BASE_URL = "172.20.10.13:8080";
 const AI_API_BASE_URL = "172.20.10.13:8000";
+
+// const API_BASE_URL = "127.0.0.1:8080";
+// const AI_API_BASE_URL = "127.0.0.1:8000";
