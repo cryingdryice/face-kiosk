@@ -1,2 +1,2 @@
-const API_BASE_URL = "localhost:8080";
-const AI_API_BASE_URL = "localhost:8000";
+const API_BASE_URL = "192.168.212.229:8080";
+const AI_API_BASE_URL = "192.168.212.229:8000";
