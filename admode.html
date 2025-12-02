@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Kiosk System</title>
+  <link rel="stylesheet" href="admode.css">
+</head>
+
+<body>
+  <div class="admode-container">
+    <!-- 화면 전체 덮는 영상 -->
+    <video id="ADVideo" autoplay loop playsinline></video>
+
+    <!-- 길게 눌렀을 때 나오는 뒤로가기 오버레이 -->
+    <div id="exitOverlay" class="exit-overlay">
+      <button class="back-btn" onclick="history.back()">←</button>
+    </div>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="admode.js"></script>
+</body>
+
+</html>

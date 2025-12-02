@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Kiosk System</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="login-container">
+    <h1 class="login-title">Login</h1>
+    <button class="btn primary" onclick="fakeLogin('TRAVEL')">
+      관광업계로 로그인
+    </button>
+
+    <!-- 의류업계 -> CLOTHES -->
+    <button class="btn secondary" onclick="fakeLogin('CLOTHES')">
+      의류업계로 로그인
+    </button>
+  </div>
+</body>
+
+<script>
+  // 임시 로그인 함수
+  function fakeLogin(category) {
+    // 브라우저에 현재 로그인 카테고리 저장
+    localStorage.setItem("adCategory", category);
+    // 메인 페이지로 이동
+    location.href = "main.html";
+  }
+</script>
+
+</html>

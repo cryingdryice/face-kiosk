@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+
+  /* 스크롤 가능하게 */
+  height: auto;
+  min-height: 100vh;
+
+  /* 기본 흐름 사용 (flex 제거) */
+  display: block;
+}
+
+/* 공통 버튼 스타일 */
+.btn {
+  width: 260px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #5559e4;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #4649c8;
+}
+
+.btn.secondary {
+  background-color: #f6f7fb;
+  color: #000;
+}
+
+.btn.secondary:hover {
+  background-color: #ebecf2;
+}
+
+/* ====== Content Library 페이지 ====== */
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 40px; /* 추가 */
+  padding-bottom: 40px; /* 맨 아래 여백 */
+  text-align: center;
+}
+
+/* 리스트 전체 영역 */
+.content-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 40px;
+}
+
+/* 카드 하나 */
+.content-card {
+  width: 528px;
+  max-height: 210px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #eeeeee;
+  padding: 18px 18px 16px;
+}
+
+/* 카드 상단: 썸네일 + 정보 */
+.content-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.content-thumbnail {
+  width: 200px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.content-info {
+  text-align: left;
+  font-size: 12px;
+}
+
+.content-info .file-name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.content-info .meta {
+  color: #666666;
+  margin-top: 2px;
+}
+
+/* 카드 하단 버튼 영역 */
+.content-card-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.library-btn {
+  flex: 1;
+  height: 230px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid #e2e4eb;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Preview 버튼 */
+.library-btn.preview {
+  background-color: #f6f7fb;
+  color: #000;
+}
+
+.library-btn.preview:hover {
+  background-color: #ebecf2;
+}
+
+/* Delete 버튼 */
+.library-btn.delete {
+  background-color: #ff3b4f;
+  color: #ffffff;
+  border: none;
+}
+
+.library-btn.delete:hover {
+  background-color: #e33043;
+}
+
+/* 뒤로가기 버튼 */
+.back-btn {
+  background-color: #5559e4;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #4649c8;
+}

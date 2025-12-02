@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 공통 버튼 스타일 */
+.btn {
+  width: 380px;
+  height: 76px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #5559e4;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #4649c8;
+}
+
+.btn.secondary {
+  background-color: #f0f1f9;
+  color: #000;
+}
+
+.btn.secondary:hover {
+  background-color: #ebecf2;
+}
+
+/* 메인 페이지 */
+.main-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 6px;
+}
+
+.main-subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 뒤로가기 버튼 */
+.back-btn {
+  background-color: #5559e4;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #4649c8;
+}

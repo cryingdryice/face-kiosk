@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 스크롤 가능하게 */
+  height: auto;
+  min-height: 100vh;
+}
+
+.upload-container {
+  text-align: center;
+  width: 100%;
+  max-width: 510px;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+/* 공통 버튼 스타일 */
+.btn {
+  width: 470px;
+  height: 60px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #5559e4;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #4649c8;
+}
+
+.btn.secondary {
+  background-color: #f6f7fb;
+  color: #000;
+}
+
+.btn.secondary:hover {
+  background-color: #ebecf2;
+}
+
+/* 업로드 박스 */
+.upload-box {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 0 0 1px #eee;
+}
+
+.preview-empty {
+  background-color: #f6f7fb;
+  width: 470px;
+  height: 260px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.preview-image {
+  max-width: 470px;
+  max-height: 260px;
+  border-radius: 8px;
+  object-fit: fill;
+}
+
+/* 세부사항 박스 */
+.details-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 0 0 1px #eee;
+}
+
+.target-section h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.target-section .sub {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.age-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.age-btn {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.age-btn.selected {
+  background: #5559e4;
+  color: #fff;
+  border-color: #5559e4;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 뒤로가기 버튼 */
+.back-btn {
+  background-color: #5559e4;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #4649c8;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Kiosk System</title>
+  <link rel="stylesheet" href="upload.css" />
+</head>
+
+<body>
+  <div class="upload-container">
+    <button class="back-btn" onclick="history.back()">←</button>
+    <h1 class="page-title">Upload New Content</h1>
+
+    <!-- 파일 업로드 박스 -->
+    <div class="upload-box" id="uploadBox">
+      <input type="file" id="fileInput" accept="video/*,image/*" hidden />
+      <div id="previewArea" class="preview-empty">
+        <p>No file selected</p>
+      </div>
+      <button class="btn primary" id="uploadBtn">Upload File</button>
+    </div>
+
+    <!-- 세부사항 선택 영역 (업로드 후 표시) -->
+    <div class="details-box hidden" id="detailsBox">
+      <div class="target-section">
+        <h3>Target Audience</h3>
+        <p class="sub">Age Groups</p>
+        <div class="age-group">
+          <button class="age-btn" data-age="10">Teen</button>
+          <button class="age-btn" data-age="20">20s</button>
+          <button class="age-btn" data-age="30">30s</button>
+          <button class="age-btn" data-age="40">40s</button>
+          <button class="age-btn" data-age="50">50+</button>
+          <!-- <button class="age-btn">ALL</button> -->
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button class="btn secondary" id="resetBtn">Reset</button>
+        <button class="btn primary" id="registerBtn">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="common.js"></script>
+  <script src="upload.js"></script>
+</body>
+
+</html>
