@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  const src = `http://localhost:8080/api/ad-videos/${id}/video`;
+  const src = `http://${API_BASE_URL}/api/ad-videos/${id}/video`;
 
   videoEl.src = src;
 

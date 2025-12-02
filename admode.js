@@ -1,7 +1,7 @@
 // admode.js
 
 // --- 설정값 ---
-const API_BASE_URL = "http://localhost:8080/api/ad-videos"; // 백엔드 base path
+// const API_BASE_URL = "http://172.20.10.13:8080/api/ad-videos"; // 백엔드 base path
 
 // --- DOM 요소 ---
 const adVideoEl = document.getElementById("ADVideo");
@@ -18,7 +18,7 @@ function buildVideoUrl(age, category) {
     category: category,
   });
 
-  return `${API_BASE_URL}/video?${params.toString()}`;
+  return `http://${API_BASE_URL}/api/ad-videos/video?${params.toString()}`;
 }
 
 // 실제로 영상 src 교체해서 재생

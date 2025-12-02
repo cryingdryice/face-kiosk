@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
           const res = await fetch(
-            `http://localhost:8080/api/ad-videos/${item.id}`,
+            `http://${API_BASE_URL}/api/ad-videos/${item.id}`,
             { method: "DELETE" }
           );
 
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const res = await fetch(
-        `http://localhost:8080/api/ad-videos/by-category?category=${category}`
+        `http://${API_BASE_URL}/api/ad-videos/by-category?category=${category}`
       );
 
       if (!res.ok) {

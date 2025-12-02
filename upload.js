@@ -78,7 +78,7 @@ registerBtn.addEventListener("click", async () => {
   formData.append("age", selectedAge);   // @RequestParam("age") int age
 
   try {
-    const res = await fetch("http://localhost:8080/api/ad-videos/upload", {
+    const res = await fetch(`http://${API_BASE_URL}/api/ad-videos/upload`, {
       method: "POST",
       body: formData,
       // Content-Type은 브라우저가 자동으로 지정하므로 건드리지 말 것
